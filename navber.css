@@ -1,0 +1,129 @@
+ /* Basic Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+
+  /* Header Styling */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #222;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Logo Styling */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff8c00;
+  }
+
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #fff;
+  }
+
+  /* Search Bar Container */
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    background: linear-gradient(135deg, #333, #444);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Glowing Effect on Focus */
+  .search-container:focus-within {
+    background: linear-gradient(135deg, #ff8c00, #1e90ff, #ff1493, #32cd32);
+    animation: gradientGlow 3s ease infinite;
+  }
+
+  /* Glowing Background Animation */
+  @keyframes gradientGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Search Icon */
+  .search-icon {
+    position: absolute;
+    left: 15px;
+    font-size: 18px;
+    color: #bbb;
+    pointer-events: none;
+    transition: color 0.3s;
+  }
+
+  /* Change icon color on focus */
+  .search-container:focus-within .search-icon {
+    color: #fff;
+  }
+
+  /* Search Input */
+  .search-bar {
+    width: 100%;
+    padding: 8px 10px 8px 40px;
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+  }
+
+  /* Placeholder Styling */
+  .search-bar::placeholder {
+    color: #bbb;
+    transition: color 0.3s;
+  }
+
+  /* Change placeholder color on focus */
+  .search-container:focus-within .search-bar::placeholder {
+    color: #fff;
+  }
+
+  /* Right Icons Section */
+  .header-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+  }
+
+  .header-icons a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .header-icons a:hover {
+    color: #fff;
+  }
