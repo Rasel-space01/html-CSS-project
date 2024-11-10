@@ -1,0 +1,137 @@
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styles */
+nav {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Menu container */
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    display: block;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ffde59;
+}
+
+/* Drop-down menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.dropdown li a {
+    padding: 12px 20px;
+}
+
+.menu li:hover .dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dropdown animation */
+.dropdown li a:hover {
+    background-color: #ffde59;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Hamburger icon */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #ffffff;
+        margin: 6px 0;
+        transition: 0.3s;
+    }
+
+    /* Toggle menu */
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background-color: rgba(30, 60, 114, 0.95);
+        border-radius: 10px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    /* Show menu when checked */
+    #menu-toggle:checked + .menu {
+        display: flex;
+    }
+}
+
+/* Hamburger animation */
+#menu-toggle:checked + .menu .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked + .menu .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + .menu .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
