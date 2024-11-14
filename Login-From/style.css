@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#184b9e, #145c80, #394352);
+    color: #fff;
+}
+
+.login-container {
+    background:linear-gradient(#237fac);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-box {
+    background-color:#042441;
+    padding: 40px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(1, 169, 71, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0083ff;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ccc;
+    text-align: left;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2a2d32;
+    color: #fff;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    font-size: 12px;
+    color: #0083ff;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0083ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.login-btn:hover {
+    background-color: #0070e4;
+}
+
+.register-link {
+    color: #0083ff;
+    text-decoration: none;
+
+}
+
+.or-divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.github-btn {
+    background-color: #116373;
+    color: #fff;
+}
+
+.google-btn {
+    background-color: #116373;
+    color: #fff;
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+}
