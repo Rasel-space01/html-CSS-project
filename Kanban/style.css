@@ -1,0 +1,88 @@
+body {
+    background-color: #282626;
+    color: #FFFFFF;
+    height: max-content;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+.ash-color {
+    background-color: #353131;
+}
+
+.add-new-button {
+    background-color: #6630FF;
+    border-radius: 20px;
+}
+
+.bolder-font {
+    font-weight: bolder;
+}
+
+.full-height {
+    height: 170vh;
+}
+
+.bx-dots-vertical-rounded {
+    font-size: 40px;
+    margin: 0;
+    padding: 0 0 0 5px;
+}
+
+.logo-kanban {
+    height: 100%;
+    width: 150px;
+}
+
+.title {
+    margin: 10px 0 0 70px;
+}
+
+.caption {
+    margin: 70px 20px;
+}
+
+.feature-button {
+    background-color: #6630FF;
+    color: #FFFFFF;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.shadow-text {
+    color: #a9a9a9;
+}
+
+.purpole-text {
+    color: #6630FF;
+}
+
+.task-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 50px 0;
+}
+
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card-body {
+    border-color: #353131;
+    border-radius: 10px;
+}
+
+.round-box {
+    background-color: #6630FF;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}

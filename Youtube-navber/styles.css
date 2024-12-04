@@ -13,7 +13,7 @@ body {
     align-items: center;
     background-color: #202020;
     padding: 10px 20px;
-    height: 60px;
+    height: 90px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   }
   
@@ -101,4 +101,98 @@ body {
     cursor: pointer;
     margin-left: 15px;
   }
+
+  /* styles.css */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} */
+ .mainbar{
+  display: flex ;
+  justify-content: space-between;
+ }
+ .leftbar{
+  border: #fff;
+  background: #202020;
+  width:300px;
+  height: 500px;
+ }
+
+.thumbnail {
+  margin: auto;
+  margin-top: 20px;
+  margin-left:20px ;
+  width: 300px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.thumbnail-img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: relative;
+  color: white;
+}
+
+.title {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.duration {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.video-info {
+  display: flex;
+}
+.logo img{
+  border: #121212;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom:65px ;
+}
   
+.video-title {
+  color: #121212;
+  /* font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 5px; */
+}
+
+.channel {
+  font-size: 12px;
+  color: #555;
+}
+
+.channel span {
+  color: #999;
+}
+.cha1{
+  color: #999;
+}
+
